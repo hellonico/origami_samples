@@ -1,4 +1,4 @@
-(ns opencv4.video
+(ns opencv4.webcam
   (:require
     [opencv4.core :refer :all]
     [opencv4.video :as v]
