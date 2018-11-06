@@ -4,7 +4,7 @@ This is a generated origami project
 # generated using
 
 ```
-lein new clj-opencv origami-simple
+lein new clj-opencv opencv4
 ```
 
 # Using leiningen 
@@ -19,7 +19,7 @@ lein run -m opencv4.simple
 clj -m opencv4.ok
 clj -m opencv4.simple
 clj -m opencv4.tutorial
-clj -m opencv4.videosample
+clj -m opencv4.video
 ```
 
 
