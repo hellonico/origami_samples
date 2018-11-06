@@ -1,4 +1,4 @@
-(ns opencv4.videosample
+(ns opencv4.video
   (:require
     [opencv4.core :refer :all]
     [opencv4.video :as v]
