@@ -1,6 +1,6 @@
 (defproject origami-simple "0.1-SNAPSHOT"
 :test-paths ["test"]
-:plugins [[hellonico/lein-gorilla "0.4.1"][lein-auto "0.1.3"]]
+:plugins [[hellonico/lein-gorilla "0.4.2"][lein-auto "0.1.3"]]
 :auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv4.ok
 :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
