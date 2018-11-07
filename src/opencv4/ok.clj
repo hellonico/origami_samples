@@ -1,4 +1,5 @@
 (ns opencv4.ok
+	(:gen-class)
 	(:require [opencv4.core :refer :all]))
 
 (defn -main [& args]

@@ -1,0 +1,61 @@
+plugins {
+  id 'gradle-clojure.clojure' version '0.4.0'
+  id 'application'
+  id 'com.github.johnrengelman.shadow' version '2.0.4'
+  id 'maven-publish'
+}
+
+group = 'myname'
+version = '0.1.0-SNAPSHOT'
+
+mainClassName = 'opencv4.ok'
+
+repositories {
+  mavenCentral()
+  maven {
+    name = 'clojars'
+    url = 'https://repo.clojars.org'
+  }
+  maven {
+    name = "vendredi"
+    url = "https://repository.hellonico.info/repository/hellonico"
+  }
+}
+
+sourceSets {
+      main.clojure.srcDirs = ['src']
+      main.resources.srcDirs = ['resources']
+}
+
+dependencies {
+  implementation 'org.clojure:clojure:1.9.0'
+  implementation 'origami:origami:4.0.0-beta7'
+  testImplementation 'junit:junit:4.12'
+  devImplementation 'org.clojure:tools.namespace:0.3.0-alpha4'
+}
+
+clojure {
+  builds {
+    main {
+      aotAll()
+    }
+  }
+}
+
+publishing {
+  publications {
+    shadow(MavenPublication) { publication ->
+      project.shadow.component(publication)
+    }
+  }
+  repositories {
+    maven {
+      name = 'clojars'
+      url = 'https://repo.clojars.org'
+      credentials {
+        username = System.env['CLOJARS_USER']
+        password = System.env['CLOJARS_PASSWORD']
+      }
+    }
+  }
+}
