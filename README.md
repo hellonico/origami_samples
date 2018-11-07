@@ -19,7 +19,7 @@ lein run -m opencv4.simple
 clj -m opencv4.ok
 clj -m opencv4.simple
 clj -m opencv4.tutorial
-clj -m opencv4.video
+clj -m opencv4.webcam
 ```
 
 

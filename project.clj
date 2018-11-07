@@ -19,5 +19,14 @@
 :dependencies [
  [org.clojure/clojure "1.9.0"]
  [org.clojure/tools.cli "0.3.5"]
- [origami "4.0.0-beta7"]]
+
+ [origami "4.0.0-beta7"]
+
+ ; uncomment to use only the binary for your platform
+ ; [origami "4.0.0-beta7" :exclusions [opencv/opencv-native]]
+ ; [opencv/opencv-native "4.0.0-beta1" :classifier "osx_64"]
+ ; [opencv/opencv-native "4.0.0-beta1" :classifier "linux_64"]
+ ; [opencv/opencv-native "4.0.0-beta1" :classifier "windows_64"]
+
+ ]
  )

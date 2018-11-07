@@ -4,5 +4,10 @@
  }
  :deps { 
  	origami {:mvn/version "4.0.0-beta7"}
+ 	
+ 	; origami {:mvn/version "4.0.0-beta7" :exclusions [opencv/opencv-native]}
+ 	; opencv/opencv-native {:mvn/version "4.0.0-beta1" :classifier "osx_64"}
+ 	; opencv/opencv-native {:mvn/version "4.0.0-beta1" :classifier "limux_64"}
+ 	; opencv/opencv-native {:mvn/version "4.0.0-beta1" :classifier "windows_64"}
  }
 }
