@@ -10,7 +10,10 @@ lein new clj-opencv opencv4
 # Using leiningen 
 
 ```
+lein run -m opencv4.ok
 lein run -m opencv4.simple
+lein run -m opencv4.tutorial
+lein run -m opencv4.webcam
 ```
 
 # Using clj
