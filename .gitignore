@@ -1,3 +1,7 @@
 .cpcache/
 .lein-failures
 target/
+.gradle/
+.lein-repl-history
+build/
+grey-neko.jpg
