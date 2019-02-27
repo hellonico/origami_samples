@@ -41,4 +41,7 @@ docker run -it my-origami-app lein run -m opencv4.simple
 
 # or with clj
 docker run -it my-origami-app clojure -m opencv4.ok
+
+# with the official image
+docker run -it hellonico/origami clojure -m opencv4.ok
 ```
