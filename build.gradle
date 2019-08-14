@@ -29,7 +29,7 @@ sourceSets {
 
 dependencies {
   implementation 'org.clojure:clojure:1.9.0'
-  implementation 'origami:origami:4.0.0-beta7'
+  implementation 'origami:origami:4.1.1-1'
   testImplementation 'junit:junit:4.12'
   devImplementation 'org.clojure:tools.namespace:0.3.0-alpha4'
 }
