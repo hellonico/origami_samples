@@ -5,3 +5,12 @@ target/
 .lein-repl-history
 build/
 grey-neko.jpg
+.classpath
+.ipynb_checkpoints/
+.project
+.settings/
+bin/
+.gorilla-port
+.idea/
+.nrepl-port
+opencv4.iml

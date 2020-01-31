@@ -1,6 +1,6 @@
 (defproject origami-simple "0.1-SNAPSHOT"
 :test-paths ["test"]
-:plugins [[hellonico/lein-gorilla "0.4.2"][lein-auto "0.1.3"]]
+:plugins [[hellonico/lein-gorilla "0.4.2"][lein-auto "0.1.3"][lein-jupyter "0.1.16"]]
 :auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv4.ok
 :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
@@ -20,13 +20,16 @@
  [org.clojure/clojure "1.9.0"]
  [org.clojure/tools.cli "0.3.5"]
 
- [origami "4.1.1-1"]
+ [origami "4.2.0-0"]
 
  ; uncomment to use only the binary for your platform
- ; [origami "4.0.0-beta7" :exclusions [opencv/opencv-native]]
- ; [opencv/opencv-native "4.0.0-beta1" :classifier "osx_64"]
- ; [opencv/opencv-native "4.0.0-beta1" :classifier "linux_64"]
- ; [opencv/opencv-native "4.0.0-beta1" :classifier "windows_64"]
+ ; [origami "4.2.0-0" :exclusions [opencv/opencv-native]]
+ 
+ ; [opencv/opencv-native "4.2.0-0" :classifier "osx_64"]
+ ; [opencv/opencv-native "4.2.0-0" :classifier "linux_64"]
+ ; [opencv/opencv-native "4.2.0-0" :classifier "arm"]
+ ; [opencv/opencv-native "4.2.0-0" :classifier "arm"]
+ ; [opencv/opencv-native "4.2.0-0" :classifier "windows_64"]
 
  ]
  )
