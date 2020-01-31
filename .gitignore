@@ -14,3 +14,4 @@ bin/
 .idea/
 .nrepl-port
 opencv4.iml
+output/*
