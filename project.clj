@@ -1,30 +1,18 @@
 (defproject origami-simple "0.1-SNAPSHOT"
 :test-paths ["test"]
-:plugins [
-          ; [hellonico/lein-gorilla "0.4.2"] 
-          [lein-jupyter "0.1.17"]
-          ]
+:plugins [[hellonico.lein-jupyter "0.1.17"]]
 :auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv4.ok
-:repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
-; :aliases {"notebook" ["gorilla" ":ip" "0.0.0.0" ":port" "10000"]}
+; :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
 :profiles {:dev {
   :resource-paths ["resources"]
   :dependencies [
-  ; used for proto repl
-  ; [org.clojure/tools.nrepl "0.2.11"]
-  ; proto repl
-  ; [proto-repl "0.3.1"]
-  ; use to start a gorilla repl
-  [clojupyter "0.3.0"] 
-  ; [hellonico/gorilla-repl "0.4.1"]
   [seesaw "1.5.0"]]
   }}
 :dependencies [
  [org.clojure/clojure "1.10.1"]
  [org.clojure/tools.cli "0.4.2"]
-
- [origami "4.2.0-1-SNAPSHOT"]
+ [origami "4.2.0-1"]
 
  ; uncomment to use only the binary for your platform
  ; [origami "4.2.0-0" :exclusions [opencv/opencv-native]]
