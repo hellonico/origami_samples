@@ -1,6 +1,6 @@
 (defproject origami-simple "0.1-SNAPSHOT"
 :test-paths ["test"]
-:plugins [[hellonico.lein-jupyter "0.1.17"]]
+:plugins [[lein-jupyter "0.1.16"]]
 :auto {:default {:file-pattern #"\.(clj)$"}}
 :main opencv4.ok
 ; :repositories [["vendredi" "https://repository.hellonico.info/repository/hellonico/"]]
