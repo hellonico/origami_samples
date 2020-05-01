@@ -1,7 +1,7 @@
 plugins {
-  id 'gradle-clojure.clojure' version '0.4.0'
+  id "gradle-clojure.clojure" version "0.5.0-alpha.1"
   id 'application'
-  id 'com.github.johnrengelman.shadow' version '2.0.4'
+  id "com.github.johnrengelman.shadow" version "5.2.0"
   id 'maven-publish'
 }
 
@@ -29,7 +29,8 @@ sourceSets {
 
 dependencies {
   compile 'org.clojure:clojure:1.9.0'
-  compile 'origami:origami:4.2.0-1'
+  compile 'origami:origami:4.3.0-6'
+  compile 'origami:filters:1.11'
   testCompile 'junit:junit:4.13'
   compile 'org.clojure:tools.namespace:0.3.0-alpha4'
 }

@@ -1,7 +1,6 @@
 (ns opencv4.webcam
   (:require
     [opencv4.core :refer :all]
-    [opencv4.video :as v]
     [opencv4.utils :as u]))
 
 (defn -main[ & args]
